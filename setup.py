@@ -2,7 +2,7 @@ import os
 
 import setuptools
 
-from platform import __version__
+from currentplatform import __version__
 
 
 def read(fname):
@@ -10,7 +10,7 @@ def read(fname):
 
 
 setuptools.setup(
-   name='krozark-platform',
+   name='krozark-current-platform',
    version=__version__,
    description='The aim of this project is to get the current running platform',
    long_description=read('README.md'),
@@ -19,7 +19,7 @@ setuptools.setup(
    author='Maxime Barbier',
    author_email='maxime.barbier1991+platform@gmail.com',
    url="https://github.com/Krozark/platform",
-   keywords="platform",
+   keywords="current platform",
    packages=setuptools.find_packages(),
    classifiers=[
       "Programming Language :: Python",
